@@ -2,30 +2,2800 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="my_logo.png">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <title>Tally</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tally  </title>
   </head>
   <body>
-    <div class="spinner-border m-5" role="status">
-      <span class="visually-hidden">Loading...</span>
+    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img class="logo" src="my_logo.png" alt="logo">
+          <a class="navbar-brand" href="#">jsQUICKsoftech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h_header"><b>Home</b></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Theory</b>
+                </a>
+                <ul class="dropdown-menu scroll" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#tally_1">Tally  </a></li>
+                  <li><a class="dropdown-item" href="#gst_2">GST</a></li>
+                  <li><a class="dropdown-item" href="#firm_3">Composition & Regular Firms</a></li>
+                  <li><a class="dropdown-item" href="#create_company_4">Create Company</a></li>
+                  <li><a class="dropdown-item" href="#gateway_5">Gateway of Tally</a></li>
+                  <li><a class="dropdown-item" href="#voucher_6">Voucher</a></li>
+                  <li><a class="dropdown-item" href="#ledger_group_7">Ledger and Group</a></li>
+                  <li><a class="dropdown-item" href="#types_purchase_8">Types of Purchase</a></li>
+                  <li><a class="dropdown-item" href="#ac_only_inve_9">Accounts only & Inventory</a></li>
+                  <li><a class="dropdown-item" href="#bank_ac_10">Bank Account</a></li>
+                  <li><a class="dropdown-item" href="#cash_hand_11">Cash in Hand</a></li>
+                  <li><a class="dropdown-item" href="#duties_tax_12">Duties & Taxes</a></li>
+                  <li><a class="dropdown-item" href="#invest_13">Investment</a></li>
+                  <li><a class="dropdown-item" href="#fixed_assets_14">Fixed Assets</a></li>
+                  <li><a class="dropdown-item" href="#loan_adv_15">Loan & Advances Assets</a></li>
+                  <li><a class="dropdown-item" href="#secured_loan_16">Secured Loan</a></li>
+                  <li><a class="dropdown-item" href="#unsecured_loan_17">Unsecured Loan</a></li>
+                  <li><a class="dropdown-item" href="#purchase_ac_18">Purchase Account</a></li>
+                  <li><a class="dropdown-item" href="#sales_ac_19">Sales Account</a></li>
+                  <li><a class="dropdown-item" href="#sundry_debtors_20">Sundry Debtors</a></li>
+                  <li><a class="dropdown-item" href="#sundry_creditors_21">Sundry Creditors</a></li>
+                  <li><a class="dropdown-item" href="#indirect_income_22">Indirect Income</a></li>
+                  <li><a class="dropdown-item" href="#direct_income_23">Direct Income</a></li>
+                  <li><a class="dropdown-item" href="#indirect_ex_24">Indirect Expenses</a></li>
+                  <li><a class="dropdown-item" href="#direct_ex_25">Direct Expenses</a></li>
+                  <li><a class="dropdown-item" href="#capital_26">Capital Account</a></li>
+                  <li><a class="dropdown-item" href="#provisions_27">Provisions</a></li>
+                  <li><a class="dropdown-item" href="#branch_division_28">Branch/Division</a></li>
+                  <li><a class="dropdown-item" href="#misc_29">Misc. Expenses Assets</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">English</a></li> -->
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Tally ERP9 Practical</b>
+                </a>
+                <ul class="dropdown-menu scroll" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#tally_open_1">How To Open Tally</a></li>
+                  <li><a class="dropdown-item" href="#create_company_2">How to create company</a></li>
+                  <li><a class="dropdown-item" href="#receipt_vou_3">Receipt Voucher Entry</a></li>
+                  <li><a class="dropdown-item" href="#payment_vou_4">Payment Voucher Entry</a></li>
+                  <li><a class="dropdown-item" href="#active_gst_5">How to Active GST</a></li>
+                  <li><a class="dropdown-item" href="#purchase_act_6">Purchase Voucher Entry</a></li>
+                  <li><a class="dropdown-item" href="#sales_act_7">Sales Voucher Entry</a></li>
+                  <li><a class="dropdown-item" href="#contra_act_8">Contra Voucher Entry</a></li>
+                  <li><a class="dropdown-item" href="#debit_credit_note_9">Debit and Credit Note Entry</a></li>
+                  <li><a class="dropdown-item" href="#discount_10">Discount</a></li>
+                  <li><a class="dropdown-item" href="#school_ac_11">Account Only Maintain</a></li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Tally Prime</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#tally_ ">Coming Soon</a></li>
+                  <li><a class="dropdown-item" href="#tally_ ">Coming Soon</a></li>
+                  <li><a class="dropdown-item" href="#tally_ ">Coming Soon</a></li>
+                  <li><a class="dropdown-item" href="#tally_ ">Coming Soon</a></li>
+                  <li><a class="dropdown-item" href="#tally_ ">Coming Soon</a></li>
+                </ul>
+              </li> -->
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Language</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html">English</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item active" href="hindi.html">हिंदी</a></li>
+                </ul>
+              </li> -->
+
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+    </nav>
+
+    <!-- ---------------------HOME-------------------------------- -->
+
+    <div class="home-header" id="h_header">
+      <div class="header-g">
+        <h1 class="home-h ml10">
+          Tally ERP 9 Tutorial
+        </h1>
+        <h2 class="h-effect"><span class="h-head">I'm </span><span class="auto-input"></span></h2>
+        <p class="home-p">This is a very popular course, after learning which there is a possibility of 
+          getting a job in the field of accounting, as well as you can maintain 
+          account of your own business.</p>
+        <a href="#tally_1" class="start_button" >Get Started</a>
+      </div>
     </div>
-    <img src="crash.JPG" alt="">
+
+    <div class="home-about">
+      <div class="about-line">
+        <h1 class="about-h">ABOUT</h1>
+        <img src="under_line.png" alt="">
+      </div>
+      <div class="scroll-container">
+        <div class="about-text scroll-element js-scroll fade-in">
+          <p class="about-p about-mr">Usually Tally course in coaching institute is of three months and for 
+            this you may have to pay three to four thousand rupees but you can learn it for free here.</p>
+          <p class="about-p about-ml">Here it is explained in detail how to use Tally. Simple steps to create 
+            company and its required forms and fields are explained detailed for beginners.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-team">
+      <div class="about-line">
+        <h1 class="about-h">TEAM</h1>
+        <img src="under_line.png" alt="">
+      </div>
+      <p class="team-q ml11">
+        <span class="text-wrapper">
+            <!-- <span class="line line1"></span> -->
+            <span class="letters">A team in my opinion is similar to a tree that needs 
+              nourishment from time to time To grow stronger and 
+              produce productive results </span>
+        </span>
+      </p>
+      <div class="team-card">
+        <div class="card-j">
+          <img src="j_photo.png" alt="">
+          <br>
+          <h3 class="card-th">Jitendra</h3>
+          <p class="card-tp">Web, Android and Software Developer<br>
+            MSc (Computer Science)</p>
+        </div>
+        <div class="card-j">
+          <img src="m_photo.png" alt="">
+          <br>
+          <h3 class="card-th">Mukutmani</h3>
+          <p class="card-tp">IT Trainer and Computer Teacher<br>
+            PGDCA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------- Home - End ------------------------------ -->
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+    <div class="container">
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="tally_1">Tally  </h2>
+          <p>Tally   एक अकाउंटिंग सॉफ्टवेयर है</p>
+          <h3>Accounting</h3>
+          <p>टैली सॉफ्टवेयर को लेखांकन के लिए डिज़ाइन किया गया है ताकि 
+              मैनुअल अकाउंटिंग में गलती को सुधारा जा सके और कम से कम 
+              समय में रिपोर्ट तैयार की जा सके।
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Features of Tally  </h3>
+          <p>टैली का इस्तेमाल कई देशों में अकाउंटिंग के लिए किया जाता है 
+              और इस सॉफ्टवेयर की काफी डिमांड है।
+          </p>
+          <p>
+            यह सॉफ्टवेयर अकाउंटिंग के काम को बहुत आसान बनाता है। इसमें कई ऐसे फीचर 
+            होते हैं, जिनसे हम किसी भी कंपनी की किसी भी 
+            तरह की रिपोर्टिंग देख सकते हैं और अकाउंट मेनटेन कर सकते हैं।
+          </p>
+          <p>
+            हम टैली में काम करते रहते हैं
+            इसमें रिपोर्टिंग अपने आप हो जाती है। सॉफ्टवेयर का आकार बहुत कम होता है जिससे यह हमारी 
+            हार्ड डिस्क में ज्यादा जगह का उपयोग नहीं करता है और साथ ही 
+            यह टैली को संचालित करने के लिए बहुत आसान है।
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>Uses of Tally  </h2>
+          <P>
+            Transactions in any business are recorded in tally  .
+          </P>
+          <p>Transactions Type</p>
+          <p><b>1. Purchase</b> - कितना माल खरीदा।</p>
+          <p><b>2. Sales</b> - आपने कितना माल बेचा।</p>
+          <p><b>3. Payment</b> - किसको कितना भुगतान किया?</p>
+          <p><b>4. Receipt</b> - आपने किससे कितना पैसा लिया?</p>
+          <p><b>5. Creditors</b> - लोग हमसे कितने पैसे मांगते हैं</p>
+          <p><b>6. Debtors</b> - हम किससे कितने पैसे मांगते हैं?</p>
+          <p><b>7. Profit & Loss</b> - कितना लाभ या हानि हुआ</p>
+          <p><b>8. Stock</b> - कितना स्टॉक है?</p>
+          <p><b>9. Expenses</b> - कितना खर्च हुआ</p>
+          <p><b>10. Income</b> - कितना इनकम हुआ</p>
+        </div>
+      </div>
+      
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>Create Company in Tally</h2>
+          <P>सबसे पहले हमें उस कंपनी या दुकान की कंपनी बनानी होगी 
+              और हमें उस कंपनी के बारे में कुछ बुनियादी जानकारी होनी 
+              चाहिए जो इस प्रकार है</P>
+          <p><b>Information Required to Create a Company in Tally</b></p>
+          <p>1. Company Name</p>
+          <p>2. Company Address</p>
+          <p>3. Company Phone Numbers</p>
+          <p>4. Company Mobile Numbers</p>
+          <p>5. Company Email Address</p>
+          <p>6. Company City and state</p>
+          <p>7. Company Pin Code</p>
+          <p>8. Financial Year</p>
+          <p>9. GSTIN Number</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>Financial Year</h2>
+          <p>वित्तीय वर्ष 1 अप्रैल से शुरू होकर 31 मार्च को समाप्त होता है।</p>
+          <hr>
+          
+          <h2 id="gst_2">GST</h2>
+          <p>Full Form of GST - <b>Goods & Service Tax</b></p>
+          <p>सरकार द्वारा किसी भी प्रकार की वस्तुओं या सेवाओं पर लगाए जाने वाले 
+              कर को GST कहा जाता है।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>Nature of Business</h2>
+          <p><b>Business For Purchase & Sales Of Goods</b> - 
+            जिसमें लाभ कमाने के लिए किसी भी प्रकार का उत्पाद खरीदा या 
+            बेचा जाता है। जैसे इलेक्ट्रॉनिक्स की दुकान जिसमें फ्रिज टीवी 
+            खरीदा और बेचा जाता है।</p>
+          <P><b>Business For Service Providing</b> - जिसमें किसी भी प्रकार की सेवा का 
+            आदान-प्रदान किया जाता है। जिसमें कोई सामान खरीदा या बेचा नहीं 
+            जाता है। जिसमें सर्विस दी जाती है और मुनाफा कमाया जाता है। 
+            जैसे मोबाइल रिचार्ज, आइटम रिपेयरिंग, होटल सर्विसेज, रेस्टोरेंट आदि।</P>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Who are Compulsory For GST Registration</b></p>
+          <p>सरकार के नियमों के मुताबिक जो लोग एक साल में 40 लाख से 
+              ज्यादा प्रोडक्ट बेचते हैं, उनका जीएसटी में रजिस्ट्रेशन कराना 
+              जरूरी है।</p>
+          <p>जो लोग एक वर्ष में 20 लाख से अधिक की सेवा प्रदान करते हैं, 
+              उन्हें जीएसटी में पंजीकृत करवाना आवश्यक है।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Document Required For GST Registration</b></p>
+          <p>1. Aadhar Card of Applicant</p>
+          <p>2. Pan Card of Applicant</p>
+          <p>3. Passport Size Photo of Applicant</p>
+          <p>4. Bank Account Front Page of Applicant</p>
+          <p>5. Valid Mobile Number of Applicant</p>
+          <p>6. Proof of Business Address</p>
+          <p>7. Rent Aggreement (if shop on Rent)</p>
+          <p>8. Firm Name</p>
+          <p>Apply GST Registration gst.gov.in</p>
+          <p>After applying, a number is received which is called GSTIN Number.</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>GSTIN Number</h3>
+          <p>GSTIN Number Full Form - GST Identification Number</p>
+          <p>GSTIN Number consists of 15 digits.</p>
+          <p>First 2 Digit - State code</p>
+          <p>Next 10 Digit - Pan card Number of Applicant</p>
+          <p>Next 1 Digit - Entity Number of PAN Holder in a state</p>
+          <p>Next 1 Digit - By Default Z</p>
+          <p>Last 1 Digit - Random Number</p>
+          <img src="gstin.PNG" alt="">
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Types of GST Rates</h3>
+          <P><b>GST @ 00% - </b>
+            Items or services on which no GST is charged 
+            (Fertilizer, Seeds, milk, Eggs)</P>
+          
+          <p><b>GST @ 05% -</b> 
+            Items or services on which 5% GST is charged 
+            (Suger, Spices, Tea)</p>
+          
+          <p><b>GST @ 12% -</b> 
+            Items or services on which 12% GST is charged 
+            (water bottle, ghee, pickles)
+          </p>
+          <p><b>GST @ 18% -</b> 
+            Items or services on which 18% GST is charged 
+            (mobile, computers)
+          </p>
+          <p><b>GST @ 28% -</b> 
+            Items or services on which 28% GST is charged 
+            (Air Conditioners, luxury items, cement)
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>How GST Apply in Invoice</h3>
+          <p><b>1. SGST (State Tax) & CGST (Central Tax) - </b> 
+            जब भी कोई वस्तु उसी शहर से खरीदी जाती है या उसी शहर में 
+            बेची जाती है, तो कर और राजस्व कर का 50-50% लागू होता है</p>
+          <p>उदाहरण - यदि कोई मोबाइल छत्तीसगढ़ में ही खरीदा जाता है 
+              और छत्तीसगढ़ के किसी भी शहर में बेचा जाता है, तो कर 
+              इस प्रकार होगा।</p>
+          <p>Mobile Value - 1000 Rs.<br>
+          SGST 9% - 90 Rs. <br>
+          CGST 9% - 90 Rs. <br>
+          <b>Total - 1180 Rs.</b></p>
+          <p><b>2. IGST (Interstate Tax) - </b> 
+            IGST तब लागू होता है जब कोई वस्तु दूसरे राज्य 
+            से खरीदी या बेची जाती है।</p>
+            <p>Mobile Value - 1000 Rs.<br>
+              IGST 18% - 180 Rs. <br>
+              <b>Total - 1180 Rs.</b></p>
+        </div>
+      </div>
+
+          <hr>
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="firm_3">Composition Firm and Regular Firms</h2>
+          <p>The firm is registered in two ways in GST.</p>
+          <p>1. Composition Firm</p>
+          <p>2. Regular Firm</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Difference between the two firms</h3>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Sno.</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Composition Firms</th>
+                <th scope="col">Regular Firms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><b>Turnover Limit</b></td>
+                <td>यदि फर्म की 1 वर्ष की बिक्री 1.5 करोड़ से कम है, 
+                    तो फर्म को कंपोजीशन में पंजीकृत किया जा सकता है।</td>
+                <td>यदि किसी फर्म की 1 वर्ष की बिक्री 1.5 करोड़ से 
+                    अधिक है तो फर्म को नियमित रूप से पंजीकृत कराना अनिवार्य है।</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><b>GST Return</b></td>
+                <td>The composition firm has to make quarterly 
+                  returns. Which is called <b>CMP08 Return.</b></td>
+                <td>The regular firm has to make 1 return every 
+                  month which is called <b>GSTR3B Return.</b></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><b>Applicable of Tax Rates</b></td>
+                <td>कंपोजिशन फर्म में खरीद पर जीएसटी का इनपुट नहीं 
+                    लिया जा सकता और न ही बिक्री पर जीएसटी लगाया 
+                    जा सकता है।</td>
+                <td>नियमित फर्मों को इनपुट जीएसटी और आउटपुट जीएसटी 
+                    का पूरा रिकॉर्ड रखना होता है।</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><b>Tax Liability</b></td>
+                <td>कंपोजिशन फर्म हर 3 महीने में बेचती है, उसे रिटर्न के साथ 
+                    बिक्री का 1% टैक्स देना होता है।</td>
+                <td>अगर किसी नियमित फर्म में GSTR3B रिटर्न के हिसाब से टैक्स 
+                    देना होता है तो टैक्स देना पड़ता है, अगर नहीं बनाया तो नहीं 
+                    करना है।</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><b>Example of Entry</b></td>
+                <td>कंपोजिशन फर्म में टैली में खरीद या बिक्री पर 
+                    कोई एसजीएसटी और सीजीएसटी या आईजीएसटी नहीं लगाया जाता है।</td>
+                <td>टैली में एक नियमित फर्म में खरीद या बिक्री दर्ज करने पर, 
+                    आइटम का कर योग्य मूल्य अलग से लिखा जाता है और उस पर 
+                    लागू कर एसजीएसटी और सीजीएसटी या आईजीएसटी लगाया 
+                    जाएगा।</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td><b>Name of Invoice</b></td>
+                <td>कंपोजिशन फर्म में generated बिल को bill of supply कहा जाता है।</td>
+                <td>एक नियमित फर्म में generated बिल को Tax Invoice कहा जाता है।</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="create_company_4">How to Create Company in Tally  </h2>
+          <p>Download Tally from official website of Tally</p>
+          <p>Install Tally</p>
+          <h3>Open Tally</h3>
+          <p> Double click tally icon.</p>
+          <img style="width: auto;" src="create1.PNG" alt="">
+          <p>पहली बार जब आप टैली खोलेंगे तो इस तरह की एक विंडो दिखाई देगी</p>
+          <img src="create2.PNG" alt="">
+          <p>यह एक डेमो संस्कार है, इस संस्करण में हम हर वो काम कर सकते हैं जो लाइसेंस संस्करण में 
+            करते हैं। केवल एक चिज़ को छोड़ कर। एंट्री करते वक्त एंट्री की 
+            तारीख हर माहे की केवल 1 या 2 तारीख ही कर सकते हैं।</p>
+          <p>
+            टैली खोलने के बाद माउस का प्रयोग न करें।
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Run Tally in Education Mode</h3>
+          <img src="create3.PNG" alt="">
+          <p>
+            अब हम कंपनी बनाएंगे। कंपनी बनाने के लिए कंपनी बनाएं चुनें
+              फिर एंटर दबाएं। या Alt + c . दबाएं
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Insert Company Information</h3>
+          <p>अब यहां एक-एक करके डिटेल्स भरनी होंगी।
+            याद रखें, अगले विकल्प पर जाने के लिए कीबोर्ड में एंटर का उपयोग करें।
+            और पिचले ऑप्शन में आने के लिए बैकस्पेस का इस्तेमाल करें।
+          </p>
+          <img src="create4.PNG" alt="">
+          <p>सारी जानकारी दर्ज करने के बाद आपको अंत तक एंटर दबाना होगा, फिर यह आपसे हां 
+            और ना को स्वीकार करने के लिए कहेगा।
+            एंटर दबाते ही आपकी कंपनी बन जाएगी।</p>
+          <p>फिर जो विंडो खुलेगी उसे गेटवे ऑफ टैली कहते हैं।</p>
+          <img src="create5.PNG" alt="">
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>How to Close Tally</h3>
+          <p>टैली को 3 तरह से बंद किया जा सकता है।</p>
+          <p>1. आपको कीबोर्ड पर Esc बटन दबाना है और Enter दबाना है।</p>
+          <p>2. आपको कीबोर्ड पर Q बटन दबाना है और एंटर दबाना है।</p>
+          <p>3. To press ctrl + q in the keyboard.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="gateway_5">Gateway of Tally</h2>
+          <p>टैली में कंपनी बनाने के बाद जो पहला पेज खुलता है उसे गेटवे ऑफ टैली कहते हैं।</p>
+          <img src="create6.PNG" alt="">
+          <p>Now understand such point by point</p>
+          <h3>MENU BAR</h3>
+          <p><b>Print - </b>To print Report</p>
+          <p><b>Export - </b>रिपोर्ट को एक्सेल में Export करने के लिए।</p>
+          <p><b>Email - </b>रिपोर्ट मेल करने के लिए</p>
+          <p><b>Help - </b>टैली में किसी भी प्रकार की सहायता के लिए।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>FUNCTION BAR</h3>
+          <p>F1 से F12 तक की कुंजियों का उपयोग फंक्शन बार में किया जाता है।</p>
+          <p><b>F2(Date) - </b>रिपोर्ट दर्ज करते या देखते समय तिथि बदलने के लिए।</p>
+          <p><b>ALT+F2(Period) - </b>अवधि बदलने के लिए</p>
+          <p><b>F3(Company Info) - </b>पहले से बनाई गई कंपनी को संपादित करने या हटाने के लिए।</p>
+          <p><b>F11(Features) - </b>टैली में अन्य Features को Activate करने के लिए।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>COMPANY INFORMATION</h3>
+          <p><b>Company Current Period - </b>अभी कौन सा वित्तीय वर्ष सक्रिय है?</p>
+          <p><b>Current Date - </b>अभी कौन सी तारीख है?</p>
+          <p><b>Name of Company - </b>अभी कौन सी कंपनी खुली है?</p>
+          <p><b>Date of last Entry - </b>इस कंपनी में अंतिम प्रविष्टि किस तारीख को हुई थी?</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>GATEWAY OF TALLY</h3>
+          <p>टैली का यही मेन पेज है चाहे किसी भी तरह का काम हो लेजर बनाना 
+            हो, स्टॉक आइटम बनाना हो, किसी भी तरह की एंट्री करनी हो या फिर 
+            किसी भी तरह की रिपोर्ट्स देखना हो। सब काम यही पर होता है।</p>
+          <p><b>Gateway of Tally चार भागों में विभाजित है।</b></p>
+          <p><b>Masters - </b>किसी भी तरह का लेज़र या आइटम, चाहे नया 
+            बनाना हो, या पहले से बने लेज़र या आइटम को एडिट या डिलीट करना हो, 
+            यह सब इस पर होता है।</p>
+          <p><b>Transaction - </b>इस फंक्शन का प्रयोग टैली में किसी भी प्रकार की प्रविष्टि करने के 
+            लिए किया जाता है।</p>
+          <p><b>Utilities - </b>इस फ़ंक्शन का उपयोग टैली की कुछ उन्नत सुविधाओं 
+            का उपयोग करने के लिए किया जाता है जिनका उपयोग आवश्यकता के 
+            अनुसार किया जाता है।</p>
+          <p><b>Reports - </b>इस Function के अंदर किसी भी प्रकार की रिपोर्ट देखी जा सकती है।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>How to Activate GST Features</h2>
+          <p>GST सुविधाओं को सक्रिय करने के लिए फर्म या दुकान के GST नंबर 
+            की आवश्यकता होती है।</p>
+          <p><b>आप दिए गए steps का पालन करके टैली में Features को सक्रिय कर सकते हैं।</b></p>
+          <p>1. Gateway of Tally पर पहुंचें।</p>
+          <img src="gst0.PNG" alt="">
+          <p>2. To activate the features, press F11 from the keyboard.
+            इसके बाद आपको दिए गए विकल्प पर क्लिक करना है और इसे करने के लिए Y टाइप करना है।
+          </p>
+          <img src="gst1.PNG" alt="">
+          <p>3. GST डिटेल्स विंडो कुछ इस तरह दिखेगी, कंपनी का GSTIN 
+            नंबर दर्ज करें और बाकी की जानकारी फोटो के अनुसार रखें।
+            दी गई सभी जानकारियों को दर्ज करने के बाद आपको अंत तक एंटर 
+            दबाना है जैसे ही आप लास्ट में पहुंच जाते हैं तो आपको सेव कर लेना है।</p>
+          <img src="gst2.PNG" alt="">
+          <p>4. जैसे ही आप एंटर दबाकर सेव करेंगे हम फंक्शन में वापस आ 
+            जाएंगे और फिर लास्ट तक एंटर दबाकर सेव कर लेंगे।</p>
+          <img src="gst3.PNG" alt="">
+          <p>अब GST के फीचर एक्टिवेट हो जाएंगे।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="voucher_6">Voucher</h2>
+          <p>वाउचर का मतलब एक ऐसा कागज होता है जिस पर कुछ लिखा होता है।
+            अगर मैं बिजनेस कर रहा हूं, तो माल खरीद भी रहा हूं, बेच भी रहा हूं, 
+            माल उधार भी खरीद रहा हूं और उधार भी बेच रहा हूं। किसी से पेमेंट ले 
+            रहा हूं और किसी को पेमेंट दे रहा हूं। इन सभी लेन-देन पर नज़र रखने के 
+            लिए अलग-अलग रजिस्टर बनाए जाते हैं, इसलिए इन रजिस्टरों को वाउचर 
+            कहा जाता है।
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2>Types of Vouchers</h2>
+          <p>एक व्यवसाय में कई प्रकार के लेन-देन होते हैं जैसे।</p>
+          <p>Purchase of Goods <br>
+          Sale of Goods <br>
+          Payment <br>
+          Receipt</p>
+          <p><b>1. Purchase Voucher(F9) - </b>Purchase voucher में खरीदारी नोट की जाती है।</p>
+          <p><b>2. Sales Voucher(F8) - </b>Sales वाउचर का उपयोग बिक्री दर्ज करने के लिए किया जाता है।</p>
+          <p><b>3. Payment Voucher(F5) - </b>Payment वाउचर का इस्तेमाल किसी को पेमेंट करने के लिए किया जाता है।</p>
+          <p><b>4. Receipt Voucher(F6) - </b>Receipt वाउचर में किसी से रूपये प्राप्त होने पर इसकी एंट्री करते है.</p>
+          <p><b>5. Contra Voucher (F4) - </b>इस वाउचर में तीन तरह की एंट्री होती है। कैश टू बैंक, बैंक टू कैश और बैंक टू बैंक।
+            यानी बैंक में कैश जमा करना, बैंक से कैश निकालना और अपने ही बैंक से किसी दूसरे बैंक में पैसा जमा करना.</p>
+          <p><b>6. Journal Voucher(F7) - </b>Journal Voucher में Purchase, Sales, Payment या Reciept 
+              में किसी भी प्रकार की Entry की जा सकती है।
+              लेकिन इसमें Entry करने के लिए Dr. या Cr. आना जरूरी है।</p>
+          <p><b>7. Debit Note / Purchase Return (CTRL + F9) - </b>जब खरीदे गए सामान को वापस कर दिया जाता है, तो उनकी प्रविष्टि डेबिट नोट में की जाती है।</p>
+          <p><b>8. Credit Note / Sales Return (CTRL + F8) - </b>अगर हमारे द्वारा बेचा गया सामान वापस कर दिया जाता है, 
+            तो उसकी प्रविष्टि Credit Note में की जाती है।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="ledger_group_7">Ledger and Group</h2>
+          <p><b>Ledger</b></p>
+          <p>लेजर का अर्थ होता है खाता।</p>
+          <p>यदि आप कोई वाउचर में Entry करते हैं, तो आपको एक खाता खोलना होगा। 
+            जिसे टैली की भाषा में लेज़र कहते हैं।</p>
+          <p><b>Group</b></p>
+          <p>जैसा कि नाम से पता चलता है, Group का अर्थ समूह होता है।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="types_purchase_8">Types of Purchase</h3>
+          <p><b>1. Purchase Exempt - </b>
+            ऐसी purchase जिसकी वस्तुओं पर कोई Tax नहीं लगता है और जो 
+            अपने ही राज्य से खरीदी गई है, Purchase Exempt कहलाती है।</p>
+          <p><b>2. Purchase GST - </b>
+            ऐसी purchase जिसके आइटम पर 5%, 12%, 18% या 28% में से कोई भी Tax 
+            लगता है और जो हमने अपने ही राज्य से purchase की हो, उसे purchase 
+            GST कहते हैं और इस तरह की purchase Tax 
+            SGST + CGST लगता है। Tax की दर 50 - 50%।</p>
+          <p><b>3. Purchase Interstate Exempt - </b>  
+            ऐसी purchase जिसकी items पर कोई Tax नहीं लगता है और दूसरे राज्य से खरीदा जाता है</p>
+          <p><b>4. Purchase IGST - </b>
+            ऐसी purchase, जिसकी items पर 5%, 12%, 18% और 28% Tax लगता है 
+            और किसी अन्य राज्य से purchase की जाती है, उस पर Tax लगता है, 
+            वह भी Tax की दर का 100%।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="ac_only_inve_9">Accounts Only & Accounts with Inventory</h3>
+          <p>टैली में एकाउंटिंग के दो तरीके हैं।</p>
+          <p>1. Accounts only<br>
+          2. Accounts with inventory</p>
+          <p><b>Accounts only in Tally</b></p>
+          <p>जिस Accounting में खरीदी या बेची गई वस्तुओं का विवरण रखना आवश्यक 
+            नहीं होता है, उसे ही Accounts only कहा जाता है।</p>
+          <p><b>Example - </b>राजेश ट्रेडर्स से खरीदा 5000 का सामान</p>
+          <p>ऊपर के उदाहरण में ये तो बता दिया गया है की राजेश ट्रेडर्स से माल 
+            खरिदा और ये भी बताया गया है की 5000 का माल खरीदा, लेकिन ये 
+            नहीं बताया गया है की 5000 के माल में क्या आइटम खरिदा।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Accounts with inventory in Tally</b></p>
+          <p>जिन Accounts में stock maintain रखना आवश्यक होता है, Accounts with Inventory कहा जाता है।</p>
+          <p><b>Example - </b>राजेश ट्रेडर्स से खरीदा 5000 का सामान - </p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Samsung Guru</th>
+                <td><b>5</b></td>
+                <td>1000 Rs</td>
+                <td>5000 Rs</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>ऊपर के उदाहरण में हमने ये भी लिखा की राजेश ट्रेडर्स से माल खरिदा 
+            और ये भी लिखा की 5000 का माल खरिदा और साथ में हमें माल में 
+            क्या आइटम है ये भी लिखा।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h2 id="bank_ac_10">Bank Account Group in Tally</h2>
+          <p>बैंक खाते 2 प्रकार के होते हैं।</p>
+          <p>1. Bank Saving Account <br>
+          2. Bank Current Account</p>
+          <p>इसके अलावा अन्य खाते भी हो सकते हैं।</p>
+          <p>1. Loan Account<br>
+          2. RD Account<br>
+          3. OD Account <br>
+          4. FD Account</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Bank Account - </b>
+            बैंक खाते का अर्थ एक ऐसा खाता है जिसमें हम पैसे जमा करते हैं 
+            और निकालते हैं, जिसमें हम किसी भी समय कोई भी लेनदेन कर सकते हैं।</p>
+          <p><b>बचत खाते और चालू खाते के बीच अंतर.</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Saving Account</th>
+                <th scope="col">Current Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>बचत खाता किसी व्यक्ति विशेष के नाम पर होता है।</td>
+                <td>जबकि चालू खाता फर्म के नाम होता है।</td>
+              </tr>
+              <tr>
+                <td>सेविंग अकाउंट में पैसे जमा करने की एक लिमिट होती है।
+                   बचत से ज्यादा पैसा जमा करने पर आ सकता है इनकम 
+                   टैक्स नोटिस</td>
+                <td>आप अपने व्यापारिक लेन-देन के अनुसार बैंक में चालू खाते 
+                  में कितनी भी राशि जमा कर सकते हैं।</td>
+              </tr>
+              <tr>
+                <td>बैंक द्वारा बचत खाते में पासबुक दी जाती है।</td>
+                <td>जबकि करंट अकाउंट में पासबुक की जगह स्टेटमेंट दिया जाता है।</td>
+              </tr>
+              <tr>
+                <td>बचत खाते में जमा राशि पर ब्याज मिलता है।</td>
+                <td>चालू खाते में जमा राशि पर कोई ब्याज नहीं मिलता है।</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>किसी भी बैंक का लैजर कैसे बनाये।</b></p>
+          <p>मान लीजिये किसी का SBI Bank में Saving Account है तो लेजर बनाना 
+            चाहिए "SBI Bank Saving Account" और अगर Current Account है तो लेजर 
+            बनाना चाहिए "SBI Bank Current Account"।</p>
+          <p>Nature of Bank Account Group - Assets</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="cash_hand_11">Cash in Hand Group</h3>
+          <p>Cash in hand ग्रुप में सिर्फ एक ही Ledger बनता है, जिसका नाम है Cash और ये भी बन चुका है.</p>
+          <p>बहुत से एकाउंटेंट एक और लेज़र बनाते हैं जो कैश इन हैंड ग्रुप में होता है, जिसे Petty Cash नाम दिया गया है।</p>
+          <p><b>Petty Cash - </b>
+            कंपनी का प्रबंधक अगले 1 महीने के लिए Accountant को कुछ नकद खर्च के लिए cash देता है, जिसे Petty Cash कहा जाता है।</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Deposit Asset Group</h3>
+          <p>
+            ऐसा पैसा जो हमने किसी को या कहीं पर भी सुरक्षा के तौर पर जमा 
+            करवा दिया है और वो हम कुछ समय अवधि के बाद वापस मिलना है। 
+            Deposit Asset कहते हैं।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Deposit Asset के Group में कौन से Ladger बनते हैं?</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Ladger Name</th>
+                <th scope="col">Ledger Detail</th>
+                <th scope="col">Group Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Security Deposit to Companies</td>
+                <td>जब हम किसी बड़ी कंपनी के साथ काम करते हैं और सिक्योरिटी के तौर पर पैसा जमा करते हैं।</td>
+                <td>Deposit Asset</td>
+              </tr>
+              <tr>
+                <td>Security Deposit for Shop Rent</td>
+                <td>
+                  अगर हमने कोई दुकान किराए पर ली है और उसमें कुछ security जमा कर दी है।</td>
+                <td>Deposit Asset</td>
+              </tr>
+              <tr>
+                <td>Any Other Security</td>
+                <td>इसी तरह अगर हम सिक्योरिटी के तौर पर कहीं भी पैसा जमा करते हैं।</td>
+                <td>Deposit Asset</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="duties_tax_12">Duties And Taxes Group</h3>
+          <p>किसी भी वस्तु या सेवा पर लगने वाला टैक्स या किसी आय पर काटे गए टीडीएस का 
+            भुगतान सरकार को करना होता है।तो यह हम पर दायित्व है कि जो टैक्स हमारे पास जमा
+             है, उसका भुगतान सरकार को करना है।</p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">TAX CATEGORY</th>
+                <th scope="col">REMARKS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>GST</td>
+                <td>Goods & Service Tax - 5%, 12%, 18%, 28%</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Cess</td>
+                <td>कुछ चीजें ऐसी हैं जिन पर GST TAX के अलावा  Cess Tax भी लगता है।
+                  जैसे - Tobacco & Pan Masala
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>TDS</td>
+                <td>कुछ Income होती है जिस पर TDS काटा जाता है। जैसे Commission Income</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Duties & Taxes Group Ledger</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>SGST</td>
+                <td>Duties & Taxes</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>CGST</td>
+                <td>Duties & Taxes</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>IGST</td>
+                <td>Duties & Taxes</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Cess</td>
+                <td>Duties & Taxes</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>TDS</td>
+                <td>Duties & Taxes</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="invest_13">Investment Group</h3>
+          <p>The nature of investment group is Assets</p>
+          <p><b>Investment Group And Ledger</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Bank FD Account</td>
+                <td>Investment</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bank RD Account</td>
+                <td>Investment</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Company Mutual Fund</td>
+                <td>Investment</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Investment in Shares</td>
+                <td>Investment</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Purchase of Bond</td>
+                <td>Investment</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Pension Plan</td>
+                <td>Investment</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="fixed_assets_14">Fixed Assets Group</h3>
+          <p>Fixed Assets का नेचर Assets होता है</p>
+          <p>संपत्ति जो लंबी अवधि के उपयोग के लिए खरीदी जाती है।
+            कार्यालय या दुकान में खरीदी जाने वाली वस्तुएँ उपयोग करने के लिए न कि बेचने के लिए
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Fixed Assets Group And Ledger</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Land & Building</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Plot</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Furniture</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Computer</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Car</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>AC</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Invertor</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Plant & Machinary</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Mobile</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Laptop</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Electric Equipment & Fitting</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Cooler & Fan</td>
+                <td>Fixed Assets</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>CCTV Camera</td>
+                <td>Fixed Assets</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="loan_adv_15">Loan & Advances Asset Group</h3>
+          <p>Loan & Advances Asset की Nature Asset होता है 
+            Loan & Advances Asset Group इसका मतलब है कि ऐसा Loan जो 
+            आपने किसी को दिया है, तो वह सब Loan & Advance Assets के 
+            समूह के अंतर्गत आता है।
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Loan & Advances Asset Ledger</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">LEDGER DETAIL</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Loan Given to Friends & Relative</td>
+                <td>अगर हमने किसी दोस्त रिश्तेदार या परिचित को कर्ज दिया है</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Advance Income Tax</td>
+                <td>आयकर के लिए अग्रिम रूप से जमा किया गया धन</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Advance Payment to Party</td>
+                <td>माल की खरीद के लिए अग्रिम रूप से दिया गया पैसा</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>TDS Receivable</td>
+                <td>अगर हमारी किसी आय पर TDS काटा जाता है तो वह सरकार के 
+                  पास एडवांस में जमा हो जाता है, जो हमें वापस भी मिल जाता है।</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>GST Receivable/td>
+                <td>खरीद के समय पंजीकृत फर्म जिस GST का भुगतान करती है, 
+                  वह सरकार के पास अग्रिम जमा है, जिसका हम दावा भी 
+                  कर सकते हैं।</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Advance Salary</td>
+                <td>यदि किसी कर्मचारी को अग्रिम वेतन दिया जाता है</td>
+                <td>Loan & Advances Assets</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="secured_loan_16">Secured Loan Group</h3>
+          <p>Nature of Secured Loan is Liability.</p>
+          <p>ऐसा Loan जो हम किसी भी बैंक से, किसी भी 
+            Co-Operative Society या किसी भी व्यक्ति से लेते है 
+            और Security के तौर पर हमें कोई सम्पत्ति के Documents गिरवी 
+            रखने पड़ते हो उसे Secured loan कहते है।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Secured Loan Ledger</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Bank Loan Account</td>
+                <td>Secured Loan</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Co-Operative Society Loan Account</td>
+                <td>Secured Loan</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Friends, Relatives or Any Person Loan Account</td>
+                <td>Secured Loan</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Gold Loan Account</td>
+                <td>Secured Loan</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Home Loan Account</td>
+                <td>Secured Loan</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="unsecured_loan_17">Unsecured Loan Group</h3>
+          <p>Nature of unsecured loan is Liability.</p>
+          <p>ऐसा Loan जो हम किसी भी बैंक से, किसी सहकारी समिति या 
+            किसी व्यक्ति से लेते हैं और जमानत के रूप में हमें कुछ देना नहीं होता है, 
+            इसे Unsecured Loan  कहा जाता है।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Unsecured Loan</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Bank Loan Account</td>
+                <td>Unsecured Loan</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Co-Operative Society Loan Account</td>
+                <td>Unsecured Loan</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Friends, Relatives or Any Person Loan Account</td>
+                <td>Unsecured Loan</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="purchase_ac_18">Purchase Account Group</h3>
+          <p>हम जब भी कोई सामान खरीदते हैं तो उसे Purchase voucher में Entry करते हैं।
+          </p>
+          <p>Nature of Purchase account is Expenses.</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Example - </b>
+            मान लिजिये हम 50000 का माल खरीदते है और किसी वजह से 
+            केवल 10000 का ही माल बीका और 40000 का माल पड़ा रहा। 
+            तब हम कह सकते हैं की 40000 का घटा हो गया।</p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+            <p><b>Ledger of Purchase Account Group</b></p>
+            <p>Ledger of Maintain of Accounts with inventory</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col">SR. No.</th>
+                  <th scope="col">LEDGER NAME</th>
+                  <th scope="col">GROUP NAME</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Purchase GST</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Purchase IGST</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Purchase Exempt</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Purchase Interstate Exempt</td>
+                  <td>Purchase Account</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+            <p>Ledger of Maintain of Account Only</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col">SR. No.</th>
+                  <th scope="col">LEDGER NAME</th>
+                  <th scope="col">GROUP NAME</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Purchase GST @ 00%</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Purchase GST @ 05%</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Purchase GST @ 12%</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Purchase GST @ 18%</td>
+                  <td>Purchase Account</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Purchase GST @ 28%</td>
+                  <td>Purchase Account</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="sales_ac_19">Sales Account Group</h3>
+          <p>हम जब भी कोई सामान बेचते हैं तो उसे sales voucher में Entry करते हैं।
+          </p>
+          <p>Nature of sales account is Income.</p>
+
+          <p><b>Example - </b>
+            अगर हम कोई सामान खरीदते हैं, तो आय तभी होगी जब इन सामानों को बेचा जाएगा</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Sales Account Group</b></p>
+          <p>Ledger of Maintain of Accounts with inventory</p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sales GST</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sales IGST</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sales Exempt</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sales Interstate Exempt</td>
+                <td>Sales Account</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Ledger of Maintain of Account Only</p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sales GST @ 00%</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sales GST @ 05%</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sales GST @ 12%</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sales GST @ 18%</td>
+                <td>Sales Account</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sales GST @ 28%</td>
+                <td>Sales Account</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="sundry_debtors_20">Sundry Debtors Group</h3>
+          <p>Nature of Sundry Debtors is Assets.</p>
+          <p>Sundry Debtors का अर्थ है Paisa देने वाला।</p>
+          <p><b>Difference Between Sundry Debtors and Loan & Advances Assets</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Sundry Debtors</th>
+                <th scope="col">Loan & Advances Assets</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>उधार का अर्थ है कुछ समय के लिए कुछ रुपये उधार देना।
+                  यानी मान लीजिए हमारे दोस्त को 15 दिनों के लिए 10000 की जरूरत है, 
+                  तो इस तरह से दिए गए पैसे को लोन नहीं कहा जाता है।
+                </td>
+                <td>Loan वह कहलाता है जो अधिक समय तक चलता है, जो अधिक
+                   मात्रा में होता है और जिसके लिए ब्याज लिया जाता है।</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="sundry_creditors_21">Sundry Creditors Group</h3>
+          <p>Nature of Sundry Creditors Group is Liability.</p>
+          <p>वे लोग जो हमसे पैसे मांगते हैं, वे सभी हमारे लेनदार हैं।</p>
+          <p><b>Difference Between Sundry Creditors & Loan Liability</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Sundry Creditor</th>
+                <th scope="col">Loan Liability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>वहीं दूसरी ओर इसका अर्थ है कुछ समय के लिए कुछ पैसे उधार लेना।
+                  हमने एक दोस्त से 15 दिन के लिए 10000 रुपये उधार लिए , 
+                  इसलिए इस तरह से लिए गए पैसे को लोन नहीं कहा जाता है।
+                </td>
+                <td>Loan वह कहलाता है जो अधिक समय तक चलता है, 
+                  जो अधिक मात्रा में होता है और जिसके लिए ब्याज का भुगतान करना पड़ता है।</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="indirect_income_22">Indirect Income Group</h3>
+          <p>Nature of Indirect Income group is Income.</p>
+          <p>
+            वह Income जो हम गैर-व्यावसायिक गतिविधि से अर्जित करते हैं या 
+            जब भी व्यवसाय के अलावा किसी अन्य स्रोत से आय होती है, 
+            Indirect Income कहलाती है।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Indirect Income</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Old News Paper Sold</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Old Cartoon Boxes Sold</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Old Fixed Assets Sold</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Commission Received</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Scheme & Discount Received</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Rent Received</td>
+                <td>Indirect Income</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Interest Received</td>
+                <td>Indirect Income</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="direct_income_23">Direct Income Group</h3>
+          <p>Nature of Direct Income is Income.</p>
+          <p>मुख्य व्यावसायिक गतिविधि से होने वाली आय को 
+            प्रत्यक्ष आय or direct income कहा जाता है।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Direct Income</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mobile Recharges Income</td>
+                <td>Direct Income</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Visiting Card Printing Income</td>
+                <td>Direct Income</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Marriage Card Printing Income</td>
+                <td>Direct Income</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Mobile Repairing Income</td>
+                <td>Direct Income</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="indirect_ex_24">Indirect Expenses Group</h3>
+          <p>Nature of Indirect Expenses is Expenses.</p>
+          <p>व्यवसाय को बेहतर ढंग से चलाने के लिए जो व्यय हमें 
+            करने पड़ते हैं, वे अप्रत्यक्ष व्यय Indirect Expenses कहलाते हैं।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Indirect Expenses</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Staff Salary</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Statff Commission & Bonus</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Telephone & Electricity Bills</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Tea & Snacks Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Water Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Accountant Salary</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Office & Godown Rent</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Diesel & Petrol</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Stationary & Printing Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Travelling Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Advertisement Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Vehicle Service Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Computer Service Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Shop Repairing Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>All Office Expenses</td>
+                <td>Indirect Expenses</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="direct_ex_25">Direct Expenses Group</h3>
+          <p>Nature of Direct Expenses is Expenses.</p>
+          <p>
+            वे व्यय जो मुख्य व्यावसायिक गतिविधि से संबंधित 
+            होते हैं, प्रत्यक्ष व्यय Direct Expenses कहलाते हैं।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Direct Expenses</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Diesel & Petrol Used For Machines</td>
+                <td>Direct Expenses</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Repairing Expenses for Machines</td>
+                <td>Direct Expenses</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Wages for Goods Supplies</td>
+                <td>Direct Expenses</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Factory Rent</td>
+                <td>Direct Expenses</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Material Cost</td>
+                <td>Direct Expenses</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="capital_26">Capital Account Group</h3>
+          <p>Nature of Capital Accout is Liability.</p>
+          <p>जिस धन से हम कोई नया व्यवसाय शुरू करते हैं उसे पूंजी or capital कहते हैं।</p>
+          <p><b>Ledger of Capital Account</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">LEDGER DETAIL</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Proprietor's Capital Account</td>
+                <td>जिससे व्यापार शुरू होता है।</td>
+                <td>Capital Account</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Drawings</td>
+                <td>वह मासिक धन जो व्यवसायी स्वयं अपने व्यवसाय 
+                  से लेता है, Drawings कहलाता है।</td>
+                <td>Capital Account</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>LIC</td>
+                <td>LIC को व्यवसायी का व्यक्तिगत खर्च माना जाता है।</td>
+                <td>Capital Account</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Health Insurance</td>
+                <td>Health Insurance को व्यवसायी का व्यक्तिगत खर्च माना जाता है।</td>
+                <td>Capital Account</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>School Fees</td>
+                <td>School Fees को व्यवसायी का व्यक्तिगत खर्च माना जाता है।</td>
+                <td>Capital Account</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="provisions_27">Provisions Group</h3>
+          <p>Nature of Provisions group is Liability.</p>
+          <p>भविष्य में होने वाले नुकसान की तैयारी करना ताकि बाद में 
+            हमें कोई नुकसान न हो।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Provisions Group</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">LEDGER DETAIL</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Provision For Doubtful Debts</td>
+                <td>ऐसा धन जो देनदारों से मिलना हो और जिस पर संदेह 
+                  हो कि वह आएगा या नहीं।</td>
+                <td>Provisions</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Provision For Bad Debts</td>
+                <td>जिस पैसे से यह पक्का होता है कि यह हमारा नुकसान है।</td>
+                <td>Provisions</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Provision For Depreciation</td>
+                <td>
+                  हर व्यवसाय जिसकी अचल संपत्ति होती है, उसका मूल्य 
+                  हर साल घटता जाता है, जिसे मूल्यह्रास or Depreciation कहा जाता है।</td>
+                <td>Provisions</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Provision For Income Tax</td>
+                <td>अगर व्यापार में यह महसूस होता है कि भविष्य में मुझे और 
+                  अधिक आयकर देना पड़ सकता है, तो उसके लिए भी मैं provision Ledger बना सकता हूं।</td>
+                <td>Provisions</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Provision For Loss of Assets</td>
+                <td>अगर हमें लगता है कि आगे चलकर किसी संपत्ति को 
+                  नुकसान हो सकता है तो उससे निकलने के लिए Provision बनाया जा सकता है।</td>
+                <td>Provisions</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="branch_division_28">Branch/Division Group</h3>
+          <p>
+            जहां कहीं भी कंपनी का Head Office स्थित होता है, उसे 
+            टैली सॉफ्टवेयर में शाखाओं के Ledger में बनाया जाता है।</p>
+          <p><b>Ledger of Branch/Division Group</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">LEDGER NAME</th>
+                <th scope="col">GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>JS Soft Janjgir Branch</td>
+                <td>Branch/Division</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>JS Soft Bilaspur Branch</td>
+                <td>Branch/Division</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="misc_29">Misc. Expenses Assets Group</h3>
+          <p>Nature of Misc. Expenses Assets Group is Assets.</p>
+          <p>ऐसे सभी Doubtful खर्च जो हमें बाद में चुकाने पड़ सकते हैं लेकिन 
+            अभी तक भुगतान नहीं किया है, उन सभी का Ledger Misc. Expenses Group में बनाया जाता है।</p>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Current Assets Group</h3>
+          <p>ऐसी सभी संपत्तियां जो घटती और बढ़ती रहती हैं, 
+            चालू संपत्ति कहलाती हैं।</p>
+          <p><b>Ledger of Current Assets Group</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">SUB GROUP NAME</th>
+                <th scope="col">MAIN GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Cash in Hand</td>
+                <td>Current Assets</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bank Account</td>
+                <td>Current Assets</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Loan & Advances Assets</td>
+                <td>Current Assets</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sundry Debtors</td>
+                <td>Current Assets</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Deposit Assets</td>
+                <td>Current Assets</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Stock in Hand</td>
+                <td>Current Assets</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Current Liability Group</h3>
+          <p>
+            ऐसी सभी देनदारियां जो बढ़ती और घटती रहती हैं, current liability
+            कहलाती हैं और वे देनदारियां जिनका भुगतान आज नहीं तो कल 
+            करना होता है।</p>
+          <p><b>Ledger of Current Liability Group</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">SR. No.</th>
+                <th scope="col">SUB GROUP NAME</th>
+                <th scope="col">MAIN GROUP NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sundry Creditors</td>
+                <td>Current Liabilities</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Duties & Taxes</td>
+                <td>Current Liabilities</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Customer's Advance Deposit</td>
+                <td>Current Liabilities</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3>Suspense Account Group</h3>
+          <p>जब हम बैंक स्टेटमेंट दर्ज करते हैं तो कई ऐसी प्रविष्टियां आती हैं 
+            जिनसे हमें नहीं पता होता है कि यह पैसा कहां से आया है या 
+            यह पैसा किसको दिया गया है।</p>
+          <p>
+            सस्पेंस अकाउंट का केवल एक ही लेज़र बनाया जा सकता है जिसके 
+            लेज़र का नाम सस्पेंस अकाउंट है। और हम प्रत्येक प्रविष्टि को सस्पेंस 
+            खाते के Ledger में डाल सकते हैं, जिसके बारे में हम नहीं जानते हैं।</p>
+          <p>लेकिन हमने सस्पेंस अकाउंट में जो भी एंट्रीज डाली हैं, 
+            उन्हें सही करना भी जरूरी है।</p>
+          <hr>
+          <h3>Bank OD Account Group</h3>
+          <p>Nature of Bank OD Account is Liability.</p>
+          <p>Bank OD Account means <b>Bank Over Draft Account</b></p>
+          <p>बैंक OD Account  Loan Account के समान होते हैं, लेकिन 
+            OD Account और Loan Account में अंतर होता है।</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Difference Between Bank OD Account & Bank Loan Account</b></p>
+          <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">Bank OD Account</th>
+                <th scope="col">Bank Loan Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>पैसे का उपयोग करने के लिए बैंक द्वारा सीमा दी गई है जैसे 2 लाख</td>
+                <td>बैंक द्वारा ऋण दिया जाता है जैसे 2 लाख</td>
+              </tr>
+              <tr>
+                <td>जब तक आप 
+                  1 रुपये भी 2 लाख रुपये में इस्तेमाल नहीं करते, तो कोई ब्याज नहीं लगता है।</td>
+                <td>चाहे आप इसे 1 पैसे के लिए उपयोग करें या नहीं, ब्याज दर उसी दिन 
+                  शुरू जाता है जिस दिन आपको अपना ऋण मिलता है।</td>
+              </tr>
+              <tr>
+                <td>आपके द्वारा उपयोग की जाने वाली राशि पर ब्याज लगाया जाता है 
+                  और केवल वही राशि वापस करनी होती है।</td>
+                <td>पूरे रुपये पर ब्याज लगता है और पूरा रुपया वापस करना पड़ता है।</td>
+              </tr>
+              <tr>
+                <td>इस खाते में कोई मासिक किस्त नहीं है।</td>
+                <td>ऋण खाते में हर महीने एक निश्चित किस्त होती है, 
+                  जिसे समय मिलते ही जमा करना होता है।</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Ledger of Bank OD Account</b></p>
+          <p>1. HDFC Bank OD Account</p>
+          <p>2. HDFC Bank Credit Card Account</p>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="tally_open_1">How to Open/Close Tally</h3>
+          <p>Double Click Tally Icon</p>
+          <p>यह इस तरह से विंडो ओपन करेगा।</p>
+          <img src="img/erp1.JPG" alt="">
+          <br><br>
+          <p>हम 'Work in Educational Mode' विकल्प का चयन करेंगे। 
+            Now press 'w' or Go to 'Work in Educational Mode' then press 'Enter' for select. 
+          </p>
+          <p>यह इस तरह से विंडो ओपन करेगा।</p>
+          <img src="img/erp2.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>How to close Tally</b></p>
+          <p>Tally बंद करने के लिए 'Q' या 'Esc' दबाएं।</p>
+          <h3 id="create_company_2">How to Create Company</h3>
+          <p>'Create Company' चुनें या 'c' दबाएं</p>
+          <img src="img/erp2.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>यह इस तरह से विंडो ओपन करेगा। अब इस तरह फॉर्म भरें।
+            फिर इसे सेव करें।
+          </p>
+          <img src="img/erp3.JPG" alt="">
+          <br><br>
+          <p>Now the company will be created and we will
+            come to the Gateway of Tally.</p>
+          <img src="img/erp4.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="receipt_vou_3">Receipt Voucher Entry</h3>
+          <p><b>व्यापार में 500000 रुपये का निवेश किया</b></p>
+          <p>अब इसे Receipt Voucher में Entry किया जाएगा।</p>
+          <p>Gateway of Tally में Accounting Vouchers चुनें या Receipt voucher 
+            पर जाने के लिए 'V' दबाएं।</p>
+          <img src="img/erp5.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Entry करने से पहले 'F12' दबाकर हम कुछ इस तरह सेटिंग करेंगे।</p>
+          <img src="img/erp6.JPG" alt="">
+          <br><br>
+          <p>अब हम Capital Account 
+            बनाएंगे। और Capital Account के लिए एक Ladger 
+            बनाएंगे. Ledger बनाने के लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp7.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp8.JPG" alt="">
+          <br><br>
+          <p><b>बैंक से 500000 का कर्ज लिया गया</b></p>
+          <p>ऐसे बनाएंगे एसबीआई बैंक लोन का लेजर। Ledger बनाने के लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp9.JPG" alt="">
+          <br><br>
+          <p>ऐसे बनाएंगे SBI Bank Saving A/c का लेजर। Ledger बनाने के लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp10.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp11.JPG" alt="">
+          <br><br>
+          <p><b>राम से 50000 उधार लिया</b></p>
+          <p>ऐसे बनाएंगे Ram Loan A/c का लेजर। Ledger बनाने के लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp12.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp13.JPG" alt="">
+          <br><br>
+          <p><b>कुछ दिनों के लिए मोहन से 20000 उधार लिए।</b></p>
+          <p>ऐसे बनाएंगे Mohan A/c का लेजर। Ledger बनाने के लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp14.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp15.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>बैलेंस शीट कैसे देखें</b></p>
+          <p>Gateway of Tally में Balance Sheet चुनें या 'B' दबाएं।</p>
+          <img src="img/erp16.JPG" alt="">
+          <br><br>
+          <p>Now it will look like this</p>
+          <img src="img/erp17.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="payment_vou_4">Payment Voucher Entry</h3>
+          <p><b>50000 में लैपटॉप खरीदा</b></p>
+          <p>पेमेंट वाउचर में जाने के लिए Gateway of Tally में Accounting Voucher चुनें 
+            फिर 'F5' दबाएं या पेमेंट वाउचर चुनें।</p>
+          <p>
+            ऐसे बनाएंगे Laptop Acer350 का लेजर। Ledger बनाने के लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp18.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp19.JPG" alt="">
+          <br><br>
+          <p><b>20000 में Table For Counter खरीदा</b></p>
+          <p>ऐसे बनाएंगे Table For Counter का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp20.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>45000 में Glass खरीदा</b></p>
+          <p><b>35000 में Office Chair खरीदा</b></p>
+          <p>ऐसे बनाएंगे Office Chair का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp21.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>5000 में Plastic Chair खरीदा</b></p>
+          <p><b>5000 में Ceilling Fan खरीदा</b></p>
+          <p><b>25000 में LED TV 80 खरीदा</b></p>
+          <p><b>15000 में पेंटिंग के लिए एशियन पेंट खरीदा</b></p>
+          <p>ऐसे बनाएंगे Asian Paint का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp22.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>10000 में पेंटिंग के लिए Wall putti खरीदा</b></p>
+          <p>ऐसे बनाएंगे Wall putti का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp23.JPG" alt="">
+          <br><br>
+          <p><b>5000 में Lighting के लिए Lights खरीदा</b></p>
+          <p>ऐसे बनाएंगे Lights का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp24.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Vehical Rent 1500</b></p>
+          <p>ऐसे बनाएंगे Vehical Rent का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।
+          </p>
+          <img src="img/erp25.JPG" alt="">
+          <br><br>
+          <p><b>Worker Expenses 7000</b></p>
+          <p>ऐसे बनाएंगे Worker Expenses का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp26.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>संजू को 10 हजार रुपए उधार दिए</b></p>
+          <p>ऐसे बनाएंगे Sanju Loan A/c का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp27.JPG" alt="">
+          <br><br>
+          <p><b>अमन को कुछ दिनों के लिए 3500 रुपये उधार दिए।</b></p>
+          <p>ऐसे बनाएंगे Aman A/c का लेजर। Ledger बनाने के 
+            लिए 'Alt+C' दबाएं।</p>
+          <img src="img/erp28.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp29.JPG" alt="">
+          <br><br>
+          <p>View Balance Sheet</p>
+          <img src="img/erp30.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>View Trial Balance</b></p>
+          <p>गेटवे ऑफ़ टैली में डिस्प्ले चुनें या 'D' दबाएँ, 
+            फिर डिस्प्ले मेन्यू में ट्रायल बैलेंस चुनें या 'T' दबाएं
+          </p>
+          <img src="img/erp31.JPG" alt="">
+          <br><br>
+          <img src="img/erp32.JPG" alt="">
+          <br><br>
+          <img src="img/erp33.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="active_gst_5">How to Active GST</h3>
+          <p>गेटवे ऑफ टैली में 'F11' दबाएं , फिर 'Statutory & Taxation' चुनें या 's' दबाएं
+            </p>
+          <img src="img/erp34.JPG" alt="">
+          <br><br>
+          <p>अब 'Statutory and Taxation' विंडो खुलेगी। और इस तरह विंडो भरें</p>
+          <img src="img/erp35.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>अब एक और विंडो खुलेगी। और इस तरह विंडो भरें</p>
+          <img src="img/erp36.JPG" alt="">
+          <br><br>
+          <p>then save it.</p>
+          <img src="img/erp37.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="purchase_act_6">Purchase Voucher Entry</h3>
+          <img src="img/erp37a.JPG" alt="">
+          <br><br>
+          <p>Purchase Voucher में जाने के लिए Accounting Voucher में जाएं 
+            और Purchase चुनें या 'F9' दबाएं।</p>
+          <img src="img/erp38.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Press 'F2' to change the date.</p>
+          <img src="img/erp39.JPG" alt="">
+          <br><br>
+          <p>Fill supplier's Details.</p>
+          <img src="img/erp40.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Purchase Exempt के नाम से लेजर बनाया जाएगा।</p>
+          <p><b>Purchase Exempt</b> - एक Purchase जिस पर कोई कर नहीं लगता है 
+            और उसी राज्य से खरीदी जाती है</p>
+          <img src="img/erp41.JPG" alt="">
+          <br><br>
+          <p>स्टॉक आइटम का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp44.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>स्टॉक आइटम group का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp42.JPG" class="img_size" alt="">
+          <br><br>
+          <p>Unit का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp43.JPG" class="img_size" alt="">
+          <br><br>
+          <p>Press 'F12' to active HSN code</p>
+          <img src="img/erp45.JPG" class="img_size" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp47.JPG" alt="">
+          <br><br>
+          <p>Round Off का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp48.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp49.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp49a.JPG" alt="">
+          <br><br>
+          <p>Vijay Electronics का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp50.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp51.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp51a.JPG" alt="">
+          <br><br>
+          <p>Purchase GST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp52.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Fill GST Details</p>
+          <img src="img/erp55.JPG" class="img_size" alt="">
+          <br><br>
+          <p>CGST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp57.JPG" alt="">
+          <br><br>
+          <p>SGST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp58.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp59.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp59a.JPG" alt="">
+          <br><br>
+          <p>Yogesh Computers का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp60.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Purchase IGST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp61.JPG" alt="">
+          <br><br>
+          <p>Fill GST Details</p>
+          <img src="img/erp62.JPG" class="img_size" alt="">
+          <br><br>
+          <p>IGST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp63.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp64.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp64a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Purchase Interstate Exempt का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp65.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp67.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>View Balance Sheet</p>
+          <img src="img/erp68.JPG" alt="">
+          <br><br>
+          <h3 id="sales_act_7">Sales Voucher Entry</h3>
+          <img src="img/erp68a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Sales Voucher में जाने के लिए Accounting Voucher में जाएं 
+            और Sales चुनें या 'F8' दबाएं।'</p>
+          <img src="img/erp69.JPG" alt="">
+          <br><br>
+          <p>Sales Exempt का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp70.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp71.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp71a.JPG" alt="">
+          <br><br>
+          <p>Ajit Computer का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp72.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Sales GST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp73.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp74.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp74a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Sales IGST का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp75.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp76.JPG" alt="">
+          <br><br>
+          <p>Entry This Invoice</p>
+          <img src="img/erp76a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Sales Interstate Exempt का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp77.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp78.JPG" alt="">
+          <br><br>
+          <p>View Balance Sheet</p>
+          <img src="img/erp79.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="contra_act_8">Contra Voucher Entry</h3>
+          <p>Contra Voucher में जाने के लिए Accounting Voucher में जाएं 
+            और Contra चुनें या 'F4' दबाएं।</p>
+          <img src="img/erp80.JPG" alt="">
+          <br><br>
+          <p><b>SBI Bank Saving A/c से निकाले गए 200000 रुपये नकद</b></p>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp81.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>SBI Bank Saving A/c में जमा किया गए 400000 रुपये नकद</b></p>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp82.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="debit_credit_note_9">Debit and Credit Notes Entry</h3>
+          <p>Open Accounting Features 'press F11' and enable 'debit and credit ntes'</p>
+          <img src="img/erp83.JPG" alt="">
+          <br><br>
+          <p>The entry of purchase return is entered in the debit note.</p>
+          <p>Debit Note में जाने के लिए Accounting Voucher में जाएं 
+            और Debit Note चुनें या 'Ctrl + F9' दबाएं।</p>
+          <img src="img/erp84.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>purchase return invoice</p>
+          <img src="img/erp84a.JPG" alt="">
+          <br><br>
+          <p>Purchase Return का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp85.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp86.JPG" alt="">
+          <br><br>
+          <p>The entry of sales return is entered in the credit note.</p>
+          <p>Credit Note में जाने के लिए Accounting Voucher में जाएं 
+            और Credit Note चुनें या 'Ctrl + F8' दबाएं।</p>
+          <img src="img/erp87.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>sales return invoice</p>
+          <img src="img/erp87a.JPG" alt="">
+          <br><br>
+          <p>Sales Return का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp88.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp89.JPG" alt="">
+          <br><br>
+          <h3 id="discount_10">Discount</h3>
+          <p>Discount Recieved Invoice</p>
+          <img src="img/erp89a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Discount Recieved का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp90.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp91.JPG" alt="">
+          <br><br>
+          <p>Discount Given Invoice</p>
+          <img src="img/erp91a.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Discount Given का लेजर बनाने के लिए 'Alt + c' दबाएं</p>
+          <img src="img/erp92.JPG" alt="">
+          <br><br>
+          <p>Now enter like this and then save it.</p>
+          <img src="img/erp93.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p><b>Multiple Items Discount Entry</b></p>
+          <p>विभिन्न वस्तुओं पर अलग-अलग Discount कैसे लगाये </p>
+          <p>Inventory Features में सबसे पहले निम्नलिखित सेटिंग करें।</p>
+          <img src="img/m_dis1.JPG" alt="">
+          <p>Now enter like this and then save it.</p>
+          <img src="img/m_dis2.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <h3 id="school_ac_11">Account Only Maintain</h3>
+          <p>Create company (School Accounting)</p>
+          <img src="img/erp97.JPG" alt="">
+          <br><br>
+          <p>Press 'F11' to set Accounting Features</p>
+          <img src="img/erp102.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Entry Students Fees</p>
+          <img src="img/erp102a.JPG" alt="">
+          <br><br>
+          <img src="img/erp102b.JPG" alt="">
+          <br><br>
+          <img src="img/erp102c.JPG" alt="">
+          <br><br>
+          <img src="img/erp102d.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Journal Voucher में जाने के लिए Accounting Voucher में जाएं 
+            और Journal चुनें या 'F7' दबाएं।</p>
+          <img src="img/erp100.JPG" alt="">
+          <br><br>
+          <p>Press 'Alt + c' to create Ledger of Subhas - Class-X</p>
+          <img src="img/erp101.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Press 'Alt + c' to create Ledger of Admission Fees</p>
+          <img src="img/erp103.JPG" alt="">
+          <br><br>
+          <p>Press 'Alt + c' to create Ledger of Class-X</p>
+          <img src="img/erp104.JPG" class="img_size" alt="">
+          <br><br>
+          <img src="img/erp105.JPG" class="img_size" alt="">
+          <br><br>
+          <img src="img/erp106.JPG" alt="">
+          <br><br>
+          <img src="img/erp107.JPG" alt="">
+          <br><br>
+          <img src="img/erp108.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>View Pending Amount</p>
+          <img src="img/erp117.JPG" alt="">
+          <br><br>
+          <img src="img/erp118.JPG" alt="">
+          <br><br>
+          <img src="img/erp119.JPG" alt="">
+          <br><br>
+          <img src="img/erp120.JPG" alt="">
+          <br><br>
+          <img src="img/erp121.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>Recieved cash 2000 from Dev - Class-XII</p>
+          <p>Recieved cash 3000 from Rishabh - Class-X</p>
+          <img src="img/erp122.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <img src="img/erp123.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <div class="scroll-element js-scroll fade-in-bottom">
+          <p>View Pending Amount</p>
+          <img src="img/erp124.JPG" alt="">
+          <br><br>
+          <p>View Balance Sheet</p>
+          <img src="img/erp125.JPG" alt="">
+          <br><br>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        
+
+      <!-- <p>Coming soon....</p> -->
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer">
+      <p>© Copyright JsQuickSoftech. All Rights Reserved</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="text_effect.js"></script>
+    <script src="dynamicpageloading.js"></script>
+
+    <!-- Header Typing Effect Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Jitendra", "Web Developer", "Software Developer", "Android Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+
+
   </body>
 </html>
